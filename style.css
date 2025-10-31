@@ -64,3 +64,20 @@ input:focus {
     font-size: 30px;
     padding: 20px;
 }
+
+.texte, .temps {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.meilleurScore {
+    height: 50px;
+    width: 100px;
+    background-color: rgb(167, 166, 166);
+    position: absolute;
+    top: 215px;
+    right: 60px;
+    border-radius: 6px;
+    padding: 4px;
+    color: rgb(14, 14, 14);
+    font-size: 17px;
+}
