@@ -14,6 +14,24 @@ for(let i=0;i<texte.length;i++)
 // }
 
 }
+input.addEventListener("input", () => {
+    const inputValue = input.value;
+    spans.forEach((span, index) => {
+        if(inputValue[index]==null){
+            span.style.color = "black";
+        }
+        else if(inputValue[index]==span.innerText){
+            span.style.color = "green";
+        }
+        else{span.style.color = "red";}
+    });
+    // if(inputValue===spans[conteur].innerText)
+    // {
+    //     spans[conteur].style.color = "green";
+    // }
+    // else{document.span.color = "red";}
+    // conteur ++;
+});
 
 
 
