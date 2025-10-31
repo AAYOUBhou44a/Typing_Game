@@ -20,6 +20,7 @@ body {
     padding: 15px 0;
     text-align: center;
     color: white;
+    padding-bottom: 30px;
 }
 
 .texte {
@@ -29,7 +30,7 @@ body {
     color: rgb(23, 23, 23);
     border-radius: 8px;
     text-align: center;
-    padding: 5px;
+    padding-top: 8px;
 }
 input {
     padding: 15px;
@@ -39,4 +40,27 @@ input {
 }
 input:focus {
     outline: none;
+}
+
+.temps {
+    height: 40px;
+    width: 300px;
+    background-color: rgb(241, 213, 1);
+    border: solid;
+    border-radius: 6px;
+    color: black;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.resultat {
+    width: 400px;
+    min-height: 100px;
+    position: absolute;
+    top: 300px;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(253, 252, 250);
+    font-size: 30px;
+    padding: 20px;
 }
