@@ -1,4 +1,4 @@
-const texte = "JavaScript makes the web alive and interactive.";
+const texte = "JavaScript allows developers to create interactive and dynamic websites that engage users and enhance the browsing experience.";
 const texteDiv = document.querySelector(".texte");
 let input = document.querySelector(".input");
 let conteur = 0;
@@ -58,10 +58,14 @@ function finDeJeu(){
         let wpm = Math.round((correct/5)/minutes);
         let accurancy = (correct/(correct+incorrect))*100;
         const resultat = document.querySelector(".resultat");
-        resultat.innerText = `Bravo! tu peut écrire ${wpm} mots par minute , ton précision est de ${accurancy}% `;
+        resultat.innerText = `Bravo! tu peut écrire ${wpm} mots par minute , avec un de ${accurancy}% `;
         resultat.style.background = "rgb(19, 120, 215)";
         
+    let ancien = parseInt(localStorage.getItem("meilleur")) || 0;
+    if (wpm > ancien) {
         localStorage.setItem("meilleur", wpm);
+        ancien = wpm;
+    }
 }
 
 
@@ -70,7 +74,9 @@ meilleurScore.setAttribute("class","meilleurScore");
 document.body.appendChild(meilleurScore);
 meilleurScore.innerText = `Meilleur score : ${localStorage.getItem("meilleur")}`;
 
-
+document.querySelector("#recommencer").addEventListener("click", ()=> {
+    location.reload();
+});
 
 
 
