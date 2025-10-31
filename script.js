@@ -60,9 +60,15 @@ function finDeJeu(){
         const resultat = document.querySelector(".resultat");
         resultat.innerText = `Bravo! tu peut écrire ${wpm} mots par minute , ton précision est de ${accurancy}% `;
         resultat.style.background = "rgb(19, 120, 215)";
+        
+        localStorage.setItem("meilleur", wpm);
 }
 
 
+let meilleurScore = document.createElement("div");
+meilleurScore.setAttribute("class","meilleurScore");
+document.body.appendChild(meilleurScore);
+meilleurScore.innerText = `Meilleur score : ${localStorage.getItem("meilleur")}`;
 
 
 
