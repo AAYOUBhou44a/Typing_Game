@@ -11,6 +11,7 @@ body {
     height: 100vh;
     width: 100vw;
     gap: 20px; 
+    background-color: rgb(179, 181, 181);
 }
 .titre{
     background-color: rgb(19, 120, 215);
@@ -24,19 +25,21 @@ body {
 }
 
 .texte {
-    height: 30px;
+    min-height: 50px;
     width: 80%;
     background-color: rgb(241, 213, 1);
     color: rgb(23, 23, 23);
     border-radius: 8px;
     text-align: center;
-    padding-top: 8px;
+    padding-top: 20px;
+    font-size: 20px;
 }
 input {
     padding: 15px;
-    width: 80%;
+    width: 50%;
     border-radius: 8px;
     border-color: rgb(19, 120, 215);
+    font-size: 17px;
 }
 input:focus {
     outline: none;
@@ -57,7 +60,7 @@ input:focus {
     width: 400px;
     min-height: 100px;
     position: absolute;
-    top: 300px;
+    top: 350px;
     border-radius: 10px;
     text-align: center;
     color: rgb(253, 252, 250);
@@ -70,14 +73,30 @@ input:focus {
 }
 
 .meilleurScore {
-    height: 50px;
+    height: 47px;
     width: 100px;
     background-color: rgb(167, 166, 166);
     position: absolute;
-    top: 215px;
-    right: 60px;
+    top: 245px;
+    right: 140px;
     border-radius: 6px;
     padding: 4px;
     color: rgb(14, 14, 14);
     font-size: 17px;
+    box-shadow: 3px 5px 5px 0px gray;
+}
+
+#recommencer {
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    right: 450px;
+    top: 250px;
+    border: solid;
+    font-weight: bold;
+    background-color: rgb(241, 213, 1);
+}
+
+#recommencer:hover {
+    transform: scale(1);
 }
