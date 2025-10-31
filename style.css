@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    gap: 20px; 
+}
+.titre{
+    background-color: rgb(19, 120, 215);
+    height: 20px;
+    width: 80%;
+    border-radius: 8px;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+}
+
+.texte {
+    height: 30px;
+    width: 80%;
+    background-color: rgb(241, 213, 1);
+    color: rgb(23, 23, 23);
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+}
+input {
+    padding: 15px;
+    width: 80%;
+    border-radius: 8px;
+    border-color: rgb(19, 120, 215);
+}
+input:focus {
+    outline: none;
+}
